@@ -1,0 +1,22 @@
+
+body{
+    background-color: #333;
+    font-family: 'Comfortaa', cursive;
+    color:#fff;
+    font-size: 36px;
+
+}
+img{
+    width: 800px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    
+}
+p{
+    color: lime;
+}
+.underline-tomato{
+    color: tomato;
+    text-decoration: underline;
+}

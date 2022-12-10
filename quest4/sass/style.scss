@@ -1,0 +1,56 @@
+@use'./color' as c;
+@use'./reset';
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+    color: c.$headline;
+}
+
+section {
+    height: 25vh;
+    text-align: center;
+}
+ .odd {
+    background-color: c.$odd;
+ }
+
+ .even {
+    background: c.$even;
+ }
+
+@mixin circle {
+    margin: 30px auto;
+    width: 100px;
+    height: 100px;
+    background-color: lime;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.circle {
+    @include circle
+}

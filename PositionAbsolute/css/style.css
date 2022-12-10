@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    font-size: 36px;
+    color: #fff;
+
+}
+
+main{
+    margin-top: 200px;
+
+}
+
+div{
+    margin: 0 auto;
+    height: 200px;
+    width: 600px;
+    border: 3px solid black;
+}
+
+.red{
+    background-color: tomato;
+}
+
+.blue{
+margin: 20px auto;
+background-color: royalblue;
+position: relative;
+
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+.gold{
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    background-color: gold;
+    position: absolute;
+    bottom:40px;
+    right:240px;
+}

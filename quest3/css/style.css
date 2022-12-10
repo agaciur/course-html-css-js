@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #333;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 600px;
+  background-image: url(../image/58-600x400.jpg);
+  transform: translate(-50%, -50%) rotate(45deg); 
+  transition: transform 1s ease-in;
+}
+
+.hero-text {
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  line-height: 400px;
+  color: aliceblue;
+  transition: color 1s ease-in-out 1s;
+  
+
+}
+
+.hero-img:hover {
+  transform: translate(-50%, -50%) rotate(-315deg);
+}
+ .hero-img:hover > .hero-text {
+  color: gold;
+ 
+ }
+
+

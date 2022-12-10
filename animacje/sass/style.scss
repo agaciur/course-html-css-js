@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    color: #fff;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.sky {
+    position: relative;
+    background-color: royalblue;
+    height: 60vh;
+    animation: sky 8s linear infinite;
+}
+
+.sun {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(200, 145, 27);
+    box-shadow: 0 0 100px 10px rgb(255, 174, 0);
+    animation: sun 8s linear infinite;
+}
+
+.ground {
+    position: relative;
+    bottom: 0;
+    height: 40vh;
+    background-color: #333;
+
+    .grass {
+        position: absolute;
+        width: 100%;
+        height: 25vh;
+        background-color: green;
+    }
+    .road {
+        position: absolute;
+        top: 30px;
+        height: 120px;
+        width: 100%;
+        background-color: grey;
+    }
+}
+
+.car {
+    position: absolute;
+    top: -10px;
+    left: 20vw;
+    height: 85px;
+    width: 200px;
+    background-color: red;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    animation: car 8s linear infinite;
+
+    .window {
+        position: absolute;
+        top: 10px;
+        height: 40px;
+        width: 65px;
+        background-color: blue;
+    }
+
+    .front-window {
+        right: 0;
+        top: 10px;
+        border-top-right-radius: 15px;
+    }
+
+    .rear-window {
+        border-top-left-radius: 15px;
+    }
+
+    .wheel {
+        position: absolute;
+        bottom: -10px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        border: 2px dashed rgb(157, 147, 147);
+        background-color: rgb(0, 0, 0);
+        animation: wheel 2s linear infinite;
+    }
+
+    .front-wheel {
+        right: 10px;
+    }
+
+    .rear-wheel {
+        left: 10px;
+    }
+}
+
+.car::after,
+.car::before {
+    content: " ";
+    position: absolute;
+    height: 35px;
+    width: 25px;
+    background: red;
+}
+
+.car::after {
+    bottom: 0;
+    right: -20px;
+    border-top-right-radius: 15px;
+}
+
+.car::before {
+    bottom: 0;
+    left: -20px;
+}
+
+@keyframes sky {
+    0% {
+        background-color: #000;
+    }
+
+    40% {
+        background-color: royalblue;
+    }
+
+    60% {
+        background-color: royalblue;
+    }
+    100% {
+        background-color: #000;
+    }
+}
+
+@keyframes sun {
+    0% {
+        top: 500px;
+    }
+
+    40% {
+        top: 100px;
+    }
+
+    60% {
+        top: 100px;
+    }
+
+    100% {
+        top: 500px;
+    }
+}
+
+@keyframes car {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 1400px;
+    }
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
