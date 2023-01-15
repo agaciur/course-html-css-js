@@ -1,30 +1,229 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 1.6rem;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.top-hero {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  z-index: 0;
+}
+.top-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.6rem;
+  text-transform: uppercase;
 }
 
 /* nawigacja  */
- nav {
-    font-size: 2rem;
-    text-transform: uppercase;
- }
+nav {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 
- .navbar-toggler {
-    font-size: 3rem;
- }
+.navbar-toggler {
+  font-size: 3rem;
+}
 
- .navbar-brand {
-    font-size: 2.4rem;
-    font-weight: bold;
-    text-transform: none;
- }
+.navbar-brand {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* header */
+
+header {
+  font-size: 2rem;
+}
+
+.carousel-item {
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.carousel-img-one {
+  background-image: url(../img/main-carousel-1.jpg);
+}
+
+.carousel-img-two {
+  background-image: url(../img/main-carousel-2.jpg);
+}
+
+.carousel-img-three {
+  background-image: url(../img/main-carousel-3.jpg);
+}
+
+/* main  */
+
+.fa-solid {
+  font-size: 4rem;
+}
+
+.home-cards-title {
+  font-size: 2.6rem;
+}
+
+.passion {
+  position: relative;
+  background-image: url(../img/sunset-g4a582e5d3_1920.jpg);
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.home-brand h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  font-size: 1.6rem;
+}
+
+/* about us  */
+
+.aboutus-hero {
+  background-image: url(../img/aboutus/hd-wallpaper-gb15da612d_1920.jpg);
+  background-position: bottom;
+}
+
+.aboutus-passion {
+  background-color: rgb(248, 248, 248);
+}
+.aboutus-passion h3 {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  text-decoration: underline #007bff;
+}
+.our-goals {
+  text-align: end;
+}
+.img-car-goals {
+  object-fit: cover;
+}
+
+.services-hero {
+  background-image: url(../img/services/car-g3974d65ec_1280.jpg);
+  background-position: 0 75%;
+}
+.service-hero-box {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  z-index: 1;
+}
+
+.service-hero-box p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.service-hero-box.box-one {
+  background-image: url(../img/services/engine.jpg);
+}
+.service-hero-box.box-two {
+  background-image: url(../img/services/visual.jpg);
+}
+.service-hero-box.box-three {
+  background-image: url(../img/services/car-audio.jpg);
+}
+.service-hero-box.box-four {
+  background-image: url(../img/services/allinone.jpg);
+}
+
+.project-hero {
+  background-image: url(../img/projects/project-hero.jpg);
+  background-position: center;
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+
+.contact-hero {
+  background-image: url(../img/contact.jpg);
+  background-position: center;
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 400px;
+}
+
+@media (min-width: 1400px) {
+  .carousel-item {
+    height: 600px;
+  }
+  .carousel-img-one {
+    background-image: url(../img/main-carousel-1-hq.jpg);
+  }
+
+  .carousel-img-two {
+    background-image: url(../img/main-carousel-2-hq.jpg);
+  }
+
+  .carousel-img-three {
+    background-image: url(../img/main-carousel-3-hq.jpg);
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutus-top {
+    box-shadow: 0px 5px 10px -4px rgba(66, 68, 90, 1);
+    z-index: 2;
+  }
+  .img-car-goals,
+  .our-passion,
+  .our-goals {
+    padding-top: 0;
+    height: 400px;
+    background-position: center;
+    transform: skewX(-15deg);
+  }
+  .our-passion {
+    text-align: end;
+    height: 100%;
+  }
+  .our-goals {
+    text-align: start;
+    height: 100%;
+  }
+  .aboutus-shadow {
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+}
