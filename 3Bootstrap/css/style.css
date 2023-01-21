@@ -126,3 +126,35 @@ body {
 .box-stats p {
   font-size: 1.2rem;
 }
+.posts h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.posts .btn {
+  font-size: 1.4rem;
+  background-color: transparent;
+}
+.dropdown-menu {
+  font-size: 1.4rem;
+}
+.table {
+  font-size: 1.4rem;
+}
+.table .col {
+  font-weight: bold;
+}
+.page-link {
+font-size: 1.4rem;
+background-color: transparent;
+color: #fff;
+}
+.page-link:hover {
+  background-color: rgba(255, 255, 255,.08);
+  color: #ddd;
+}
+.page-item {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
