@@ -109,15 +109,15 @@ body {
 .box-stats {
   height: 140px;
   border-radius: 15px;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 .box-stats:hover {
-   background-color: rgba(255, 255, 255, .8);
-  }
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .box-stats .stats-title {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: bold;
@@ -145,16 +145,70 @@ body {
   font-weight: bold;
 }
 .page-link {
-font-size: 1.4rem;
-background-color: transparent;
-color: #fff;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #fff;
 }
 .page-link:hover {
-  background-color: rgba(255, 255, 255,.08);
+  background-color: rgba(255, 255, 255, 0.08);
   color: #ddd;
 }
 .page-item {
   text-align: center;
   height: 30px;
   width: 30px;
+}
+
+.logo .logo-gem {
+  margin-top: 1em;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: #ddd 1px 0 10px;
+}
+.logo p {
+  padding: 0.2em;
+  font-size: 1.6rem;
+}
+
+.users-stats h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.users-stats .users-number {
+  font-size: 4rem;
+}
+.users-stats p {
+  font-size: 3rem;
+}
+.users-stats .fa-solid {
+  padding-top: 0.5em;
+  font-size: 4.5rem;
+}
+
+.users-stats .fa-person {
+  text-shadow: #64ef6d 1px 0 10px;
+}
+.users-stats .fa-person-dress {
+  text-shadow: #646fef 1px 0 10px;
+}
+.all-stats h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.all-stats .form-select,
+.all-stats .option {
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: left;
+  background-color: transparent;
+  color: rgb(124, 120, 120);
+}
+
+.all-stats h4 {
+  font-size: 2rem;
+}
+.all-stats p {
+  padding: 0.6em;
+  color: #9f9f9f;
 }
