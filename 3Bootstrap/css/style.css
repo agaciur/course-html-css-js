@@ -212,3 +212,26 @@ body {
   padding: 0.6em;
   color: #9f9f9f;
 }
+.info-top h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.posts-panel h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.featured-post .btn {
+  font-size: 1.6rem;
+}
+.featured-post .card-title {
+  font-size: 1.8rem;
+}
+.featured-post .card-body {
+  font-size: 1.4rem;
+}
+.card-body .text-muted {
+  color: #edf1f7;
+}
