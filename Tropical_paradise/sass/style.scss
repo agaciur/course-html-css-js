@@ -18,6 +18,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
 }
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -123,6 +124,12 @@ body {
 
 .nav-items-animation {
   animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: $dark;
 }
 
 .header {
@@ -496,7 +503,6 @@ body {
     flex-direction: column;
   }
 
-  
   &__form-label {
     margin-bottom: 0.5em;
     text-transform: uppercase;
@@ -559,11 +565,11 @@ body {
   }
 
   &__box-link {
-    padding: 0 .3em;
+    padding: 0 0.3em;
     font-size: 3.6rem;
     color: $pure-white;
     text-decoration: none;
-    transition: color .3s;
+    transition: color 0.3s;
 
     &:first-child {
       padding-left: 0;
