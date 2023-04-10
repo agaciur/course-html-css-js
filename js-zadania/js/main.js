@@ -10,13 +10,13 @@
 // const firstName = 'Tomek'
 // let age = 12
 // age = 18
- 
+
 // const favColor = 'niebieski'
 // const favMeal = 'schabowy'
- 
+
 // let currentCar
 // currentCar = 'Audi'
- 
+
 // let secondName = 'Ania'
 // let age2 = 24
 // let favColor2 = 'czerwony'
@@ -135,7 +135,7 @@
 // const x = 10
 
 // const newX = (x % 2 === 0) ? 'x jest parzyste' : 'x jest nieparzyste'
-// console.log(newX) 
+// console.log(newX)
 
 // const x = 50
 
@@ -149,15 +149,246 @@
 
 // lub
 
-const x = 50
-let text
+// const x = 50
+// let text
 
-if (x >= 100) {
-    text = 'x > 100'
-} else if(x < 100 && x > 30) {
-    text = 'x jest średniakiem'
-} else {
-    text = 'x jest mały'
-}
+// if (x >= 100) {
+//     text = 'x > 100'
+// } else if(x < 100 && x > 30) {
+//     text = 'x jest średniakiem'
+// } else {
+//     text = 'x jest mały'
+// }
 
-console.log(text.toUpperCase())
+// console.log(text.toUpperCase())
+
+// for (let i = 0; i < 6; i++) {
+
+// }
+
+// const colors = ['black', 'pink', 'white']
+
+// for (let i =0; i < colors.length; i++) {
+//     console.log(colors[i])
+// }
+
+// let i = 0
+
+// while (i < 5) {
+//     console.log(i)
+//     i++
+// }
+
+// let i = 0
+
+// do {
+//     i++
+//     console.log(i)
+// } while (i < 2)
+
+// const numbers = [1, 2, 3, 4, 5]
+
+// // for (let i = 0; i < numbers.length; i++) {
+// //     console.log(numbers[i] * 2)
+// // }
+
+// for (const number of numbers) {
+//     console.log(number * 2);
+// }
+
+// zadania:
+
+// const cities = ['New York', "Rotterdam", 'London', 'Rome']
+
+// for(let i = 0; i < cities.length; i++) {
+//     console.log(`To miasto nazywa się  + ${cities[i].toUpperCase()}`)
+// }
+
+// let x = 0
+
+//  while (x <= 10) {
+//     x += 2
+//     console.log(x)
+//  }
+
+// let x = 20
+
+// do {
+//     x -= 3
+// } while (x > 0)
+
+// console.log(x)
+
+// const numbers = [5, 8, 10, 23, 48, 60]
+
+// for (const number of numbers) {
+//     console.log(number / 5);
+// }
+
+// for (const number of numbers) {
+//     if (number % 2 == 0) {
+//         console.log('Liczba jest parzysta')
+//     } else {
+//         console.log('Liczba jest nieparzysta')
+//     }
+// }
+
+// tablice
+
+// const numbers = [1,2,3,4,5,6]
+
+// // Zamiast:
+// const btn1 = document.querySelector('button:nth-of-type(1)')
+// const btn2 = document.querySelector('button:nth-of-type(2)')
+// const btn3 = document.querySelector('button:nth-of-type(3)')
+
+// // można:
+
+// const btns = document.querySelectorAll('button')
+// // jest to element tablico-podobny
+
+// // i zamiast wywoływać pojedynczo przyciski:
+// function btnMsg(e) {
+//     console.log(`Kliknięto ${e.target.textContent} !`)
+// }
+// btn1.addEventListener('click', btnMsg)
+// btn2.addEventListener('click', btnMsg)
+// btn3.addEventListener('click', btnMsg)
+
+// // wywołujemy wszystkie:
+
+// btns.forEach(btn => btn.addEventListener('click', btnMsg))
+
+// const numbers = [1,2,3,4,5]
+
+// numbers.unshift(100, 200)
+// numbers.shift()
+// numbers.push(322)
+// numbers.pop()
+
+// const colors = []
+// console.log(colors)
+// colors.unshift('black')
+// console.log(colors)
+// colors.push('white')
+// console.log(colors)
+// colors.shift()
+// colors.pop()
+// console.log(colors)
+
+// const numbers = [1, 2, 3, 4, 5]
+
+// function multiply(x) {
+//     return x * 2
+// }
+
+// const newNumbers = numbers.map(multiply)
+
+// console.log(numbers);
+// console.log(newNumbers);
+
+// const abc = ['a', 'b', 'c']
+// const newAbc = numbers.concat(abc)
+// console.log(newAbc)
+
+// const drinks = ['pepsi', 'kawa', 'sok']
+// const meals = ['schabowy', 'spaghetti', 'zupa']
+
+// const menu = [...drinks, ...meals]
+// console.log(menu)
+
+// Treść zadania:
+// Skopiuj poniższy kod do pliku .js.
+
+// const numbers = [0, 0, 1, 1, 2, 2, 2]
+// const colors = ['red', 'green', 'blue', true, 123]
+// const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
+// Stwórz zmienną numbers2 i za pomocą metody slice, wytnij z tablicy numbers pierwsze dwa zera.
+
+// Następnie stwórz numbers3 i za pomocą metody slice, wytnij trzy ostatnie dwójki z tablicy numbers. Jeśli nie wiesz jak to zrobić, dokumentacja na MDN z pewnością pomoże. 🙂
+
+// Obydwie te zmienne wypisz w konsoli.
+
+// Następnie za pomocą metody splice, wytnij dwa ostanie elementy z tablicy colors.
+
+// Te nowe elementy wsadź do tablicy o nazwie randomStuff. Nowe tablice wyloguj w konsoli.
+
+// Teraz przejdź do tablicy cars. Musisz wyciąć z niej wszystkie samochody i przypisać do tablicy newCars. Skorzystaj oczywiście z metody splice. Podczas wycinania, dodaj napis 'test' do tablicy cars.
+
+// W konsoli wyloguj tablicę cars oraz newCars.
+
+// const numbers = [0, 0, 1, 1, 2, 2, 2]
+// const colors = ['red', 'green', 'blue', true, 123]
+// const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
+
+// const numbers2 = numbers.slice(0,2)
+// console.log(numbers2)
+
+// const numbers3 = numbers.slice(4,7)
+// console.log(numbers3)
+
+// const randomStuff = colors.splice(3,2)
+// console.log(colors)
+// console.log(ran domStuff)
+
+// const newCars = cars.splice(2,4,'test')
+// console.log(cars)
+// console.log(newCars)
+
+// const numbers = [0, 23, 48, 175, 2, 34,11]
+
+// function number(x) {
+//     return x % 2 === 0
+// }
+// console.log(numbers.filter(number));
+
+// numbers.forEach(number => console.log(number * 5))
+
+// console.log(numbers.includes(0))
+
+// console.log(numbers.indexOf(333))
+
+// zadania:
+
+// const letters = ['c','d']
+// letters.unshift('a','b')
+// letters.push('e','f')
+// console.log(letters)
+
+// console.log(letters.includes('c'))
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+// const foods = ['pizza','hot-dog', 'fries']
+
+// const newFoods = numbers.concat(foods)
+// console.log(newFoods)
+
+// const mixDates = [...numbers, ...foods]
+// console.log(mixDates)
+
+// const numbers = [1, 5, 13, 26, 48]
+
+// function multiply(x) {
+//     return x * 5
+// }
+
+// const newNumbers = numbers.map(multiply)
+// console.log(newNumbers)
+
+// lub
+// const newNumbers = numbers.map(number => number * 5)
+// console.log(newNumbers)
+
+// for (const number of numbers) {
+//     if (number % 2 === 0) {
+//         console.log(`Liczba parzysta: ${number}`);
+//     } else {
+//         console.log(`Liczba nieparzysta: ${number}`);
+//     }
+// }
+
+const color = ["pink"]
+color.push("red")
+color.unshift("green")
+// console.log(color)
+
