@@ -387,8 +387,67 @@
 //     }
 // }
 
-const color = ["pink"]
-color.push("red")
-color.unshift("green")
+// const color = ["pink"]
+// color.push("red")
+// color.unshift("green")
 // console.log(color)
 
+// for (let i = 0; i < color.length; i++) {
+//     console.log(`Mój ulubiony kolor to: ${color[i].toUpperCase()}`)
+// }
+
+// for (let i = 0; i < color.length; i++) {
+//     console.log(`Mój ulubiony kolor to: ${color[i].charAt(0).toUpperCase() + color[i].slice(1)}`)
+// }
+
+// const cars = "Audi, Mercedes, BMW, Nissan, Dodge"
+
+// const newCars = cars.split(', ')
+// console.log(newCars)
+
+// if (newCars.length > 3) {
+//     console.log('Jest OK')
+// } else {
+//     console.log('Nie jest OK')
+// }
+// newCars.length > 3 ?  console.log('Jest OK') : console.log('Nie jest OK')
+
+// if (newCars.includes('Audi')) {
+//     newCars.push('Porsche')
+// } else {
+//     newCars.pop()
+// }
+// console.log(newCars)
+
+// function test() {
+//     console.log('cześć')
+// }
+// test()
+
+// const helloWorld = function () {
+//     console.log('cześć! 123');
+// }
+
+// helloWorld()
+
+// function add(parametr) {
+//     console.log(`Podany argument to:  ` + parametr);
+// }
+
+// add('test')
+
+// function add(x, y) {
+//     console.log(x + y)
+// }
+// add(2,5)
+
+// function newQuest (x, y) {
+// console.log(`Cześć, mam na imię ${x} i mam ${y} lat.`)
+// }
+// newQuest('Agata', 18)
+
+const heading = document.querySelector('h1')
+
+heading.addEventListener('click', function() {
+    console.log('Kliknięto mnie');
+})
