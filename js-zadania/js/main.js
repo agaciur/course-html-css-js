@@ -446,8 +446,141 @@
 // }
 // newQuest('Agata', 18)
 
-const heading = document.querySelector('h1')
+// const heading = document.querySelector('h1')
 
-heading.addEventListener('click', function() {
-    console.log('Kliknięto mnie');
-})
+// heading.addEventListener('click', function() {
+//     console.log('Kliknięto mnie');
+// })
+
+// const arrowFunction = () => {
+
+// }
+
+// function test(name) {
+//     console.log(`Mam na imię ${name}`)
+// }
+// test('Lisa')
+
+// const test2 = (name) => {
+//       console.log(`Mam na imię ${name}`)
+// }
+// test2('Klaudia')
+
+// const test3 = name => console.log(`Mam na imię ${name}`)
+// test3('Magda')
+
+// const test4 = (name,age) => console.log(name, age)
+// test4('Tom', 15)
+
+// const add2 = (num1,num2) => num1 * num2
+
+// const days = ['poniedziałek', 'wtorek']
+
+// const days2 = days.forEach(function(day) {
+//     console.log(day);
+// })
+
+// const days3 = days.forEach((day) => console.log(day))
+
+// const newItems = (x,y) => console.log(x + y)
+// newItems(5,7)
+
+// const milk = (name) => console.log(`Lubię sowoje imię ${name}`)
+// milk('Mariola')
+
+// const ending = (x,y,name) => {
+//     console.log(x+y)
+//     console.log(`Mam piękne imię: ${name}`)
+
+// }
+// ending(5,7,'Ala')
+
+// const hello = (name = 'drogi użytkowniku') => {
+// console.log(`Cześć ${name}, jak sie masz?`)
+// }
+// hello()
+// hello('Agata')
+
+// const numbers = [.5, 4, 'abc']
+// const names = ['Lisa', 'Przemek', 'Majka']
+
+// numbers.forEach(num => console.log(num * num))
+
+// const bigNames = names.map(name => name.toUpperCase())
+// console.log(bigNames);
+
+// const showBigNames = (name) => {
+//     console.log(name.toUpperCase());
+// }
+// names.forEach(showBigNames)
+
+// names.forEach(el => console.log(el.toUpperCase()))
+
+// const numbers = (x, y, ...z) => {
+//     console.log(x, y, z)
+//     console.log(z.map(el => el * 2));
+// }
+
+// numbers(12,32,231,54,213,53,543,543)
+
+// let score
+
+// const add = (x, y) => {
+//   let score = x + y
+
+//   const funkcja2 = numX => console.log(`Liczba ${score} jest nieparzysta`)
+
+//   const funkcja1 = numX => console.log(`Liczba ${score} jest parzysta`)
+
+//   if (score % 2 === 0) {
+//     funkcja1(score)
+//   } else {
+//     funkcja2(score)
+//   }
+// }
+
+// add(8, 5)
+
+// ?????????????????????????????????????????
+// const add = (x, y) => {
+//   const score = x + y
+//   score % 2 === 0 ? evenMsg(score) : oddMsg(score)
+// }
+
+// const evenMsg = (num) => {
+//   console.log(`Liczba ${score} jest parzysta`)
+// }
+
+// const oddMsg = (num) => {
+//   console.log(`Liczba ${score} jest nieparzysta`)
+// }
+
+// add(6, 6)
+
+// let celsius
+// let temp
+
+// const fahrenheit = c => {
+//   let celsius = c
+//   let temp = celsius * 1.8 + 32
+
+//   console.log(`${celsius}st.C = ${temp}st.F`)
+// }
+// fahrenheit(20)
+
+const num = 10
+const numbers = []
+
+for (i = 0; i < num; i++) {
+  numbers.push(i)
+}
+// console.log(numbers)
+const func = (x) => {
+ if (x % 3 === 0 && x !== 0) {
+    console.log(`${x} jest podzielne przez 3`)
+ } else {
+    console.log(`${x} jest nie podzielne przez 3 lub ${x} = 0`)
+ }
+}
+
+numbers.forEach(func)
