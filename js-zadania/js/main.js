@@ -568,19 +568,254 @@
 // }
 // fahrenheit(20)
 
-const num = 10
-const numbers = []
+// const num = 10
+// const numbers = []
 
-for (i = 0; i < num; i++) {
-  numbers.push(i)
-}
-// console.log(numbers)
-const func = (x) => {
- if (x % 3 === 0 && x !== 0) {
-    console.log(`${x} jest podzielne przez 3`)
- } else {
-    console.log(`${x} jest nie podzielne przez 3 lub ${x} = 0`)
- }
-}
+// for (i = 0; i < num; i++) {
+//   numbers.push(i)
+// }
+// // console.log(numbers)
+// const func = (x) => {
+//  if (x % 3 === 0 && x !== 0) {
+//     console.log(`${x} jest podzielne przez 3`)
+//  } else {
+//     console.log(`${x} jest nie podzielne przez 3 lub ${x} = 0`)
+//  }
+// }
 
-numbers.forEach(func)
+// numbers.forEach(func)
+
+// const test = document.getElementById('item')
+
+// const test2 = document.getElementsByTagName('li')
+
+// const test3 = document.getElementsByClassName('test')
+
+// const test = document.querySelector('#item')
+// const test2 = document.querySelector('li')
+
+// const ulList = document.querySelector('ul')
+// console.log(ulList);
+
+// const liItem = ulList.querySelector('li')
+// console.log(liItem);
+
+// const liItems = document.querySelectorAll('li')
+
+// const newLi = document.createElement('li')
+// ulList.appendChild(newLi).textContent = 'abc'
+
+// const heading = document.querySelector('h1')
+// const table1 = document.querySelectorAll('p')
+
+// const test = document.querySelector('.test')
+// const test2 = test.querySelector('#test')
+// console.log(heading)
+// console.log(table1)
+// console.log(test)
+// console.log(test2)
+
+// const ulList = document.createElement('ul')
+// const liItem = document.createElement('li')
+// liItem.textContent = 'cześć'
+
+// document.body.appendChild(ulList)
+// ulList.appendChild(liItem)
+
+// const test = document.querySelector('div')
+// const pItem = document.createElement('p')
+// test.appendChild(pItem)
+
+// const h1 = document.createElement('h1')
+// const h2 = document.createElement('h2')
+// const section = document.createElement('section')
+
+// document.body.appendChild(section)
+// // section.appendChild(h1)
+// // h1.textContent = 'jestem h1'
+// // section.appendChild(h2)
+
+// section.append(h1, h2)
+
+// const btn = document.querySelector('button')
+
+// // btn.outerHTML = '123'
+// // btn.innerHTML = 'abcd'
+// //jeśli podamy sobie kod w html to on zostanie wyświetlony jako zwykły tekst
+// btn.innerText = 'abcd'
+// btn.textContent = 'abcd'
+
+// div.removeChild(p123)
+// document.body.removeChild(div)
+
+// p123.remove()
+// div.remove()
+
+// const btn1 = document.querySelector('.btn-1')
+// const btn2 = document.querySelector('.btn-2')
+// const btn3 = document.querySelector('.btn-3')
+
+// btn1.addEventListener('click', function () {
+//     console.log('kliknięto mnie!');
+// })
+
+// btn2.addEventListener('mouseover', () => console.log('najechano na mnie'))
+
+// const test = () => {
+//     console.log('double click')
+// }
+
+// btn3.addEventListener('dblclick', test)
+
+// const btns = document.querySelectorAll('button')
+// console.log(btns);
+
+// const smile = () => {
+//     console.log(':)')
+// }
+// jeśli pobierzemy wszytskie przyciski to nie możemy nadać Listenera na wszystkie, (gdyż jest to obiekt tablicopodobny):
+
+// Nadajemy na każdy jeden przycisk:
+
+// btns.forEach(btn => btn.addEventListener('click', smile))
+
+// const btn = document.querySelector('button')
+
+// const test = (e) => {
+//     console.log(e.target);
+//     console.log(e.target.classList);
+//     console.log(e.target.offsetTop);
+// }
+
+// btn.addEventListener('click', test)
+
+// const infoGold = (e) => {
+//     e.stopPropagation()
+//     console.log('wykonuje jakieś zadanie')
+// }
+
+// infoGold.addEventListener('click', infoGold)
+
+// const allCircles = document.querySelectorAll('circle')
+// const gold = document.querySelector('.gold')
+// const lime = document.querySelector('.lime')
+
+// allCircles.forEach(circle => circle.addEventListener('click', () => console.log(circle)))
+
+// const div = document.createElement('div')
+// newCircle.classList.add('circle', 'purple')
+// gold.appendChild(div)
+
+// lime.addEventListener('click', e => {
+//     if (e.target.matches('.circle2')){
+//         console.log(e.target)
+//     }
+// })
+
+// lime.addEventListener('click', e => {
+//     if (e.target.classList.contains('.circle2')){
+//         console.log(e.target)
+//     }
+// })
+
+// const div = document.querySelector('div')
+
+// div.style.fontSize = '48px'
+// div.style.backgroundColor = 'tomato'
+// div.style.padding = '20px 40px'
+// div.style.borderRadius = '8px'
+
+// div.classList.add('test')
+
+// const addBtn = document.querySelector('.add')
+// const removeBtn = document.querySelector('.remove')
+// const toggleBtn = document.querySelector('.toggle')
+// const text = document.querySelector('p')
+
+// const addClass = () => {
+//     text.classList.add('test')
+// }
+
+// const removeClass = () => {
+//     text.classList.remove('test')
+// }
+
+// const toggleClass = () => {
+//     text.classList.toggle('test')
+// }
+
+// addBtn.addEventListener('click', addClass)
+// removeBtn.addEventListener('click', removeClass)
+// toggleBtn.addEventListener('click', toggleClass)
+
+// const ulList = document.createElement("ul")
+
+// document.body.appendChild(ulList)
+
+// const number = 11
+
+//   for (let i = 1; i < number; i++) {
+//     const liItem = document.createElement('li')
+//     liItem.textContent = i
+//     ulList.append(liItem)
+//   }
+
+//   const lastLi = ulList.querySelector('li:last-child')
+
+// lastLi.textContent = 'Jestem ostatnim elementem.'
+// lastLi.style.backgroundColor = 'blue'
+// lastLi.style.padding = '20px 40px'
+// lastLi.style.fontSize = '48px'
+
+// const ulList = document.createElement("ul")
+// document.body.appendChild(ulList)
+// const num = 11
+
+// for (i = 1; i < num; i++) {
+//   const liItem = document.createElement("li")
+//   liItem.textContent = i
+//   ulList.appendChild(liItem)
+// }
+
+// const lastLi = ulList.querySelector('li:last-child')
+// lastLi.textContent = 'jestem ostatnim elementem'
+// lastLi.style.backgroundColor = 'blue'
+// lastLi.style.padding = '10px 20px'
+// lastLi.style.fontSize = '48px'
+
+// const p1 = document.querySelector('.p1')
+// const p2 = document.querySelector('.p2')
+// const btn1 = document.querySelector('.btn1')
+// const btn2 = document.querySelector('.btn2')
+// const square = document.querySelector('.square')
+
+
+
+// const red = () => {
+//   square.style.backgroundColor = 'red'
+// }
+// const blue = () => square.style.backgroundColor = 'blue'
+
+// const showElement = () => {
+//   p1.classList.toggle('show')
+//   p2.classList.toggle('show')
+
+//   // if (p1.classList.contains('show')) {
+//   //   p1.classList.remove('show')
+//   //   p2.classList.add('show')
+//   // } else {
+//   //   p1.classList.add('show')
+//   //   p2.classList.remove('show')
+//   // }
+// }
+
+// btn1.addEventListener('dblclick', function () {
+//   console.log('cześć')
+// })
+// btn2.addEventListener('click', showElement)
+// square.addEventListener('mouseover', red)
+// square.addEventListener('mouseleave', blue)
+
+const test = () => console.log('abc')
+setTimeout(test, 500)
+setInterval(test, 500)
