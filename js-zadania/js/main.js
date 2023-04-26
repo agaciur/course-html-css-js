@@ -816,6 +816,101 @@
 // square.addEventListener('mouseover', red)
 // square.addEventListener('mouseleave', blue)
 
-const test = () => console.log('abc')
-setTimeout(test, 500)
-setInterval(test, 500)
+// const test = () => console.log('abc')
+// setTimeout(test, 500)
+// setInterval(test, 500)
+
+// alert('cześć')
+
+// if (confirm('chcesz pizze?')) {
+//     console.log('ok');
+// } else {
+//     console.log('nie to nie');
+// }
+
+// const name = prompt('Cześć, jak masz na imie?', 'Ania')
+// console.log(`Cześć ${name}`)
+
+// console.log(Math.PI);
+
+// console.log = Math.random() * 10
+
+// console.log(Math.floor(number))
+
+
+
+// link.setAttribute('href', '#')
+// link.setAttribute('target', '_blank')
+
+// console.log(img.getAttribute('src'));
+
+// console.log(p.hasAttribute('style'));
+
+// p.removeAttribute('style')
+
+// const p = document.querySelector('p')
+
+// p.setAttribute('target', '_blank')
+// p.removeAttribute('class')
+// const div = document.querySelector('div')
+// const divTag = document.querySelector('[data-number="12"]')
+
+// console.log(divTag.dataset)
+// console.log(divTag.moreInfo)
+
+// //dodawanie atrybutu
+// divTag.setAttribute('data-test', '123')
+
+// // lub stworzyliśmy data-atrybut o nazwie data-color z wartościa blue
+// divTag.dataset.color = 'blue'
+
+// const prevSibling = middlechild.previosElementSibling
+// const nextSibling = middlechild.nextElementSibling
+// const parentEl = middlechild.parentElement
+
+// console.log(middlechild.closest('.class-name'))
+
+// const img = document.querySelector('img')
+
+// img.setAttribute('src', 'https://waskiel.pl/wp-content/uploads/2019/11/pomysl-na-zdjecie-wyobraznia-i-rzemioslo.jpg.webp')
+
+// img.setAttribute('alt', 'jezioro o zachodzie słońca z dwoma ptakami')
+
+// const abc = () => {
+//     console.log('hello')
+// }
+
+// setTimeout(abc, 2000)
+
+// const liItems = document.querySelectorAll('li')
+// let number = 1
+
+// for (const liItem of liItems) {
+//     liItem.textContent = number
+//     liItem.dataset.id = number
+//     number++
+// }
+
+
+// // for (let i = 0; i <= liItems.length; i++){
+// //     liItems[i].textContent = number;
+// //     liItems[i].dataset.id = number;
+// //     number++
+// // }
+
+// const liThree = document.querySelector('[data-id="3"]')
+// console.log(liThree)
+// console.log(liThree.closest('.wrapper'))
+
+// const people = [
+//     {
+//         name: 'Agata',
+//         age: 32
+//     },
+//     {
+//         name: 'Kuba',
+//         age: 30
+//     }
+// ]
+
+// console.table(people)
