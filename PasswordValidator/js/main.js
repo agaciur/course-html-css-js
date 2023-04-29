@@ -31,5 +31,4 @@ const checkPassword = () => {
     p.style.color = ''
   }
 }
-
 pass.addEventListener('keyup', checkPassword)
