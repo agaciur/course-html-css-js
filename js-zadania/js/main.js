@@ -789,8 +789,6 @@
 // const btn2 = document.querySelector('.btn2')
 // const square = document.querySelector('.square')
 
-
-
 // const red = () => {
 //   square.style.backgroundColor = 'red'
 // }
@@ -836,8 +834,6 @@
 // console.log = Math.random() * 10
 
 // console.log(Math.floor(number))
-
-
 
 // link.setAttribute('href', '#')
 // link.setAttribute('target', '_blank')
@@ -891,7 +887,6 @@
 //     number++
 // }
 
-
 // // for (let i = 0; i <= liItems.length; i++){
 // //     liItems[i].textContent = number;
 // //     liItems[i].dataset.id = number;
@@ -914,3 +909,450 @@
 // ]
 
 // console.table(people)
+
+// const myObject = {
+//     key: value,
+//     key: value,
+//     key: value
+// }
+
+// const newUser = {
+//     name: 'Lisa',
+//     age: 23,
+//     car: {
+//         brand: 'Audi',
+//         model: 'A3',
+//         color: 'czarny'
+//     }
+// }
+
+// console.log(newUser.name);
+// console.log(newUser.age);
+// console.log(newUser.car.brand);
+
+// const newUser = {
+//     name: 'Agata',
+//     age: 18,
+//     car: {
+//         brand: 'opel',
+//         model: 'astra',
+//         color: 'niebieski',
+//         'fav-food': 'pizza',
+//         sound() {
+//             console.log('brum brum')
+//         }
+//     }
+// }
+
+// console.log(`${newUser.name} jeździ samochodem marki ${newUser.car.brand}`);
+// newUser.car.sound()
+
+// newUser.country = 'Polska'
+// newUser['fav-color'] = 'niebieski'
+
+// console.log(newUser)
+
+// const dogName = 'Drops'
+// const dogAge = 5
+
+// const dog = {
+//     dogName,
+//     dogAge
+// }
+
+// const user = {
+//     name: 'Agata',
+//     age: 23,
+//     sex: 'female',
+//     'hair-color': 'blonde'
+// }
+
+// for(const data in user) {
+//     console.log(data + ':' + user[data]);
+
+// }
+
+// const user = {
+//     name: 'Agata',
+//     showName() {
+//         console.log(this.name)
+//     }
+// }
+
+// user.showName()
+
+//konstruktor
+// function User(name1, age2) {
+//     this.name = name1
+//     this.age = age2
+// }
+
+// //tworzymy objekt:
+// const newUser = new User('Klaudia', 24)
+// const newUser2 = new User ('Lily', 33)
+// const newUser3 = new User ('Majek', 45)
+
+// console.log(newUser, newUser2, newUser3);
+
+// User.prototype.hello = function () {
+//     console.log(`Cześć ${this.name}`)
+// }
+// User.prototype.country = 'Polska'
+// console.log(newUser2.country);
+
+// newUser.hello()
+
+// const btn1 = document.querySelector('.btn-1')
+// const btn2 = document.querySelector('.btn-2')
+// const btn3 = document.querySelector('.btn-3')
+// const p = document.querySelector('p')
+
+// function Meal (name,price) {
+//     this.name = name
+//     this.price = price
+// }
+
+// const newMeal1 = new Meal('Frytki','15zł')
+// const newMeal2 = new Meal('Pizza','35zł')
+// const newMeal3 = new Meal('Hamburger','30zł')
+
+// Meal.prototype.info = function () {
+//     console.log(`${this.name} kosztuje ${this.price}.`)
+// }
+
+// btn1.addEventListener('click', () => newMeal1.info())
+// btn2.addEventListener('click', () => newMeal2.info())
+// btn3.addEventListener('click', () => newMeal3.info())
+
+// const person = {
+//     name: 'Lisa',
+//     'fav-meal': 'schabowy',
+//     address: {
+//         city: 'Kraków',
+//         'zip-code': '30-000',
+//         showCity: function() {
+//             console.log(this);
+//         }
+//     }
+// }
+
+// person.address.showCity()
+
+// function Food(name) {
+//     this.name = name
+// }
+
+// const meal = new Food('schabowy')
+// const meal2 = new Food('pepsi')
+
+// console.log(meal, meal2)
+
+// const btns = document.querySelectorAll('button')
+
+// btns.forEach(btn => btn.addEventListener('click', function(){
+//     console.log(this.textcontent)
+// }))
+
+// const ob = {
+//     number: 123,
+//     showNumber() {
+//         console.log(this.number);
+//     },
+//     showNumber2() {
+//         const test = () => {
+//             console.log(this.number);
+//             console.log(this)
+//         }
+//         test()
+//     }
+// }
+
+// ob.showNumber()
+// ob.showNumber2()
+
+// function test() {
+//     console.log(this)
+//     console.log(this.name)
+// }
+
+// const car1 = {
+//     name: 'Audi',
+// }
+
+// const car2 = {
+//     name: 'Dodge',
+// }
+
+// const car3 = {
+//     name: 'Nissan',
+// }
+
+// test.bind(car1)()
+
+// const movie = {
+//     title: 'Avengers',
+// }
+
+// function showMovie(price, cinema) {
+//     console.log(`Film ${this.title}, cena: ${price}, kino: ${cinema}`)
+// }
+// // (this w tym wypadku wskazuje na window)
+
+// //funkcja.call(obiekt, argumenty)
+// showMovie.call(movie, 35, 'Kino Kijów')
+
+// //funkcja apply(obiekt, tablica)
+// showMovie.apply(movie, [35, 'Kino Kijów'])
+
+// class Person2 {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+
+//     sayHi() {
+//         console.log(`Cześć, jestem ${this.name}!`)
+//     }
+
+//     showAge() {
+//         console.log(`Mam ${this.age} lata.`)
+//     }
+// }
+
+// const person = new Person2('Ania', 33)
+// person.sayHi()
+// person.showAge()
+
+// function Food(name, price) {
+//     this.name = name
+//     this.price = price
+// }
+
+// Food.prototype.showPrice = function() {
+//     console.log(`Cena za ${this.name} wynosi: ${this.price} zł.`)
+// }
+
+// const meal = new Food('frytki', 10)
+// meal.showPrice()
+
+// class Food2 {
+//     constructor(name, price) {
+//         this.name = name
+//         this.price = price
+//     }
+
+//     showPrice() {
+//         console.log(`Cena za ${this.name} wynosi: ${this.price} zł.`)
+//     }
+// }
+
+// const meal2 = new Food2('pizza', 35)
+// console.log(meal2)
+
+// class Animal {
+//     constructor(name) {
+//         this.name = name
+//     }
+
+//     sound() {
+//         console.log(`Zwierzak robi "hau hau"`)
+//     }
+// }
+
+// class Dog extends Animal {
+//     constructor(name, age) {
+//         super(name)
+//         this.age = age
+//     }
+// }
+
+// class Cat extends Animal {
+//     sound() {
+//         console.log(`Zwierzak robi "miau miau"`)
+//     }
+// }
+
+// const dog = new Dog('Drops', 6)
+// const cat = new Cat('kot')
+// cat.sound()
+// dog.sound()
+// console.log(cat)
+
+// const user = {
+//     name: 'Lily',
+//     age: 23
+// }
+
+// const pet = {
+//     name: 'Drops',
+//     type: 'dog'
+// }
+
+// const userInfo = Object.assign({}, user, pet)
+// console.log(userInfo)
+
+// const userCopy = Object.assign({}, user)
+// userCopy.age = 25
+// console.log(userCopy)
+
+// const person = {
+//     name: 'Lily',
+//     age: 23,
+//     job: 'DJ',
+//     car: {
+//         brand: 'Dodge',
+//         model: 'Viper'
+//     }
+// }
+
+// const showInfo = ({job, name, age}) => {
+//     console.log(`${name} pracuje jako ${job} i ma ${age} lata.`)
+// }
+
+// showInfo(person)
+
+// const showInfo2 = ({car: {brand, model}}) => {
+//     console.log(`Jej samochód to ${brand} ${model}`);
+// }
+
+// showInfo2(person)
+
+// const showInfo3 = () => {
+//     const {car: {brand, model}} = person
+//     console.log(`Jej samochód to ${brand} ${model}`);
+// }
+
+// showInfo3()
+
+// const colors = ['red', 'green', 'blue']
+
+// const firstColor = colors[0]
+// const secondColor = colors[1]
+
+// const [first, second] = colors
+
+// console.log(firstColor, secondColor)
+// console.log(first, second)
+
+// const btn = document.querySelector('button')
+// const img = document.querySelector('img')
+
+// const URL = 'https://dog.ceo/api/breeds/image/random'
+
+// fetch(URL)
+// .then(res => res.json())
+// .then(data => console.log(data.message))
+// .catch(err => console.error(err))
+
+// btn.addEventListener('click', ()=> {
+//     fetch(URL)
+//     .then(res => res.json())
+//     .then(data => img.setAttribute('src', data.message))
+//     .catch(err => console.error(err))
+
+// })
+
+// const btn = document.querySelector('button')
+// const img = document.querySelector('img')
+
+// const URL = 'https://dog.ceo/api/breeds/image/random'
+
+// btn.addEventListener('click', ()=> {
+//     fetch(URL)
+//     .then(res => res.json())
+//     .then(data => img.setAttribute('src', data.message))
+//     .catch(err => console.error(err))
+// })'
+
+// const test = new Promise((resolve, reject) => {
+//     if(true) {
+//         resolve('jest ok')
+//     } else {
+//         reject('błąd')
+//     }
+// })
+
+// test
+// .then(info => console.log(info))
+// .catch(err => console.error(err))
+
+// const url = 'ala.com'
+
+// const test = {
+//     method: 'POST',
+// }
+
+// fetch(url, test)
+
+// const checkAge = age => {
+//   return new Promise((resolve, reject) => {
+//     if (age >= 18) {
+//       resolve()
+//     } else {
+//       reject("Masz za mało lat")
+//     }
+//   })
+// }
+
+// const doubleCheck = () => {
+//   return new Promise(resolve => {
+//     console.log("Sprawdzam jeszcze raz...")
+//     setTimeout(() => {
+//       resolve("Faktycznie, wiek się zgadza")
+//     }, 1000)
+//   })
+// }
+
+// // checkAge(50)
+// //   .then(() => {
+// //     console.log("Chyba możesz wejść")
+// //     return doubleCheck()
+// //   })
+// //   .then(res => console.log(res))
+// //   .then(() => {
+// //     console.log("Weryfikacja zakończona!")
+// //   })
+// //   .catch(error => console.error(error))
+
+// async function test() {
+//   try {
+//     await checkAge(8)
+//     console.log("Chyba możesz wejść.")
+//     await doubleCheck()
+//     console.log("Faktycznie, wiek się zgadza")
+//     console.log("Weryfikacja zakończona")
+//   } catch {
+//     console.error("Błąd masz za mało lat")
+//   }
+// }
+// test()
+
+// const URL = 'https://dog.ceo/api/breeds/image/random'
+
+// fetch(URL)
+// .then(res => res.json())
+// .then(data => console.log(data))
+// .catch(err => console.error(err))
+
+// async function test() {
+//     try {
+//         const res = await fetch(URL)
+//         const data = await res.json()
+//         console.log(data)
+//     } catch {
+//         console.error('błąd')
+//     }
+// }
+// test()
+
+// const URL = 'https://dog.ceo/api/breeds/image/random'
+
+// axios.get(URL).then(res => {
+//     div.setAttribute('src', res.data.message)
+// })
+
+// async function showImage() {
+//     const response = await axios.get(URL)
+//     div.setAttribute('src',response.data.message)
+// }
+// showImage()
